@@ -7,7 +7,7 @@
 }
 
 /* Tablet */
-@media (min-width: 740px) and (max-width: 1024px) {
+@media (min-width: 740px) and (max-width: 1023px) {
     .mobile-menu-btn 
     {
         display: none;
@@ -15,7 +15,7 @@
 }
 
 /* Mobile */
-@media (max-width: 740px) {
+@media (max-width: 739px) {
     .s-mb-16 
     {
         margin-bottom: 16px;
