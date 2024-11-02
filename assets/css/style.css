@@ -289,34 +289,53 @@ html
 #slider
 {
     margin-top: 46.5px;
+}
+.slide 
+{
+    padding-top: 50%;
     position: relative;
 
-    padding-top: 50%;
-    background: url(/assets/img/slider/la.jpg) no-repeat center center / cover;
+    display: none;
 }
-.slider-container 
+.slide.displaySlide 
+{
+    display: block;
+}
+.slide.slide1 
+{
+    background: url(/assets/img/slider/la.jpg) no-repeat top center / cover;
+}
+.slide.slide2
+{
+    background: url(/assets/img/slider/slider1.jpg) no-repeat top center / cover;
+}
+.slide.slide3 
+{
+    background: url(/assets/img/slider/ny.jpg) no-repeat top center / cover;
+}
+.slide .slide-container 
 {
     position: absolute;
     bottom: 32px;
-
+    left: 50%;
+    transform: translateX(-50%);
     color: #fff;
-    width: 100%;
+}
+.slide-container .slider-heading
+{
     text-align: center;
-}
-.slider-container .slider-heading
-{
-    margin: 10px 0;
-    
-    font-weight: 400;
     font-size: 24px;
+    margin: 10px 0;
+    font-weight: 400;
 }
-.slider-container .slider-des
+.slide .slide-container .slider-des
 {
+    text-align: center;
     margin: 15px 0;
-    
     font-weight: 700;
     font-size: 15px;
 }
+
 
 #content
 {
